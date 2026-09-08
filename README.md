@@ -6,7 +6,12 @@ The project focuses on simulating a game of Plakoto by printing a simplified boa
 
 ## The Layout
 The program takes place entirely on 1 terminal. It starts with a message informing the user of the possible actions, them being to play (single- or multi- player), read the rules or exit. This is depicted in picture "Initial message.png".
-If the player choses to exit there is no message and the program simply terminates.
-If the player choses to read the rules then they are presented with the rules and the initial message replays. This is depicted in picture "Rules.png".
-If the player choses to play, that's where the more complex layout presents itself.
-Instead of the full 30 pawns and 24 positions there are now 14 pawns and 12 positions to both make it faster to finish a game while debugging and to make it easier to print in the screen. The rules are still the same as in the original game. 
+- If the player choses to exit there is no message and the program simply terminates.
+- If the player choses to read the rules then they are presented with the rules and the initial message replays. This is depicted in picture "Rules.png".
+- If the player choses to play, that's where the more complex layout presents itself. The "game screen"/game board is composed of 6 areas where the pawns can be placed, seperated with "|", "-" and "+" characters, as shown in the file "Dice roll.png". In total, there are 4 quarters where the game is played and 2 seperate collumns where each player's pawns will be placed at the end of the game, marked with 2 "X"s. Player 1 pawns are represented with capital Qs and player 2 pawns are represented with capital Gs.
+- There are also 2 boxes with a number between 1 and 3 inside them, representing the dice. In the case of double rolls, that count as 4 of the same dice in backgammon, there are 4 boxes. Notice that each time a dice is spent for a pawn movement, the dice/box dissappears. This is depicted in the file "Play of choice.png".
+
+Instead of the full 30 pawns and 24 positions that the original backgammon has, there are now 14 pawns and 12 positions to both make it faster to finish a game while debugging and to make it easier to print in the screen. The rules are still the same as in the original game.
+
+## The Playstyle
+
